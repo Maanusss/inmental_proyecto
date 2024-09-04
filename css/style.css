@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu */
+#menu li > a:hover {
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.separator {
+    border: 0;
+    border-top: 2px solid #3f3f3f; /* Cambia el color y grosor según tus necesidades */
+    margin: 2rem 0; /* Espaciado superior e inferior */
+}
+
+/* Slider */
+
+.carousel-inner {
+    max-height: 60rem;
+}
+
+/* Mapa */
+
+.mapa {
+    background: url(../img/mapa.png);
+    width: 100%;
+    height: 500px;
+}
+
+#local {
+    background: #f3f3f3 ;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin:0;
+}
+
+/* Pantalla Ancha */
+
+@media (max-width:1200px) {
+    #local {
+        flex-wrap:wrap;
+        padding-top:30px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+/* Pantalla SM */
+
+@media (max-width:768px) {
+    #intro, #equipo {
+        width: 90% !important;
+    }
+}
+
+.servicio-fila{
+    width: 100% !important;
+    text-align: center;
+
+}
+
+/* Pantalla Extra Small */
+@media (max-width:576px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
