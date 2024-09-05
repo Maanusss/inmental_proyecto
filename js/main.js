@@ -7,5 +7,5 @@ const typewriter = new Typewriter(app, {
 
 typewriter
 .typeString('Av. Bartolome Mitre 2073')
-.pauseFor(200)
+.pauseFor(2000)
 .start();
