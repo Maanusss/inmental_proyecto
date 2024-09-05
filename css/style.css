@@ -205,6 +205,43 @@ footer p{
     color: #f0f0f0;
 }
 
+/* CONTACTO.HTML */
+#seccion-contacto {
+    background-color: #dc3544;
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 60px; 
+}
+
+#titulo-formulario img{
+    width: 30%;
+    height: auto;
+
+}
+
+.container1 {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #dc3544;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+#seccion-contacto input, 
+#seccion-contacto textarea {
+    width: 100%; 
+    font-size: 16px; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+}
+
+#seccion-contacto button {
+    font-size: 18px; 
+    padding: 12px; 
+}
+
 /* Pantalla Ancha */
 
 @media (max-width:1200px) {
