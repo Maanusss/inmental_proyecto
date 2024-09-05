@@ -17,14 +17,14 @@ body{
 
 .separator {
     border: 0;
-    border-top: 2px solid #3f3f3f; /* Cambia el color y grosor según tus necesidades */
-    margin: 2rem 0; /* Espaciado superior e inferior */
+    border-top: 2px solid #3f3f3f; 
+    margin: 2rem 0; 
 }
 
 /* Slider Index */
 
 .carousel-inner {
-    max-height: 60rem;
+    max-height: 100rem;
 }
 
 /* Mapa Index */
@@ -89,14 +89,36 @@ footer p{
 }
 
 /* TOTEMS.HTML */
-.container{
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: lightgrey;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Asegúrate de que el video esté detrás del contenido */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Asegúrate de que el contenido esté encima del video */
+}
+
+.container{
+    max-width: 1200px; 
+    margin: 40 auto; 
+    background-color: #dc3544;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.tituloP{
+
+/* Otros estilos */
+.tituloP {
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -107,13 +129,14 @@ footer p{
 .caja {
     margin: 60px;
 }
-.caja img{
+
+.caja img {
     width: 220px;
     height: 280px;
     border-radius: 30px;
 }
 
-.caja p{
+.caja p {
     text-align: center;
     margin: 10px;
     font-size: 20px;
