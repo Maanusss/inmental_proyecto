@@ -129,6 +129,7 @@ footer p{
     font-weight: bold;
     margin: 30px;
     font-size: 30px;
+    flex-wrap: wrap;
 }
 
 .caja {
